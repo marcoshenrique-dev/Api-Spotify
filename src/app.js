@@ -1,16 +1,9 @@
-const express = require('express'); //puxando o expres
-const app = express(); //setando o express
-const port = 3000; //setando a porta
+const express = require('express'); 
+const app = express();
+const port = 3000;
 
-app.use(express.json());//setando a possibilidade de usar json
+const padraoRouter = require('./routes/padrao.route');
 
-app.get('/rota' , (req , res) => { // rota
-
-  //req -> puxar todo tipo de retorno 
-  //res -> retorna
-
-  res.status(200).send("Hello Word");//resposta
-
-} );
-
-app.listen(port);//colocar o servidor no ar
+app.use(express.json());
+app.use(padraoRouter);
+app.listen(port);

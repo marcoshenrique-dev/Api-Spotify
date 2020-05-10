@@ -2,11 +2,14 @@
   "name": "api-spotify",
   "version": "1.0.0",
   "description": "Projeto de api do spotify",
-  "main": "index.js",
   "author": "Marcos Henrique",
   "license": "MIT",
-  "private": null,
-  "dependencies": {
+    "dependencies": {
     "express": "^4.17.1"
+  },
+  "scripts": {
+
+    "start": "node ./src/app.js"
+
   }
 }
