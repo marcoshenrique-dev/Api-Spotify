@@ -3,6 +3,6 @@ const router = express.Router();
 
 const controller = require('../controllers/padrao.controller');
 
-router.get('/status' , controller.get );
+router.get('' , controller.get );
 
 module.exports = router;
